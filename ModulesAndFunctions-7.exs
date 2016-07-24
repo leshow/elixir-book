@@ -25,4 +25,7 @@ defmodule Env do
             |> List.first
             |> Path.extname
     end
+    def run_no_arg cmd do
+        System.cmd(cmd, [])
+    end
 end
